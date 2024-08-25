@@ -1,4 +1,4 @@
-**Task Manager Project**
+***Task Manager Project***
 
 ***Overview***
 
@@ -7,30 +7,52 @@ The Task Manager Project is a Django-based web application designed to handle ta
 ***Project Structure***
 
 task_manager_project/
+
 │
+
 ├── api/
+
 │   ├── __init__.py
+
 │   ├── admin.py
+
 │   ├── apps.py
+
 │   ├── models.py
+
 │   ├── serializers.py
+
 │   ├── urls.py
+
 │   ├── views.py
+
 │   └── tests.py
+
 │
+
 ├── task_manager_project/
+
 │   ├── __init__.py
+
 │   ├── settings.py
+
 │   ├── urls.py
+
 │   ├── wsgi.py
+
 │   └── asgi.py
+
 │
+
 ├── manage.py
+
 ├── Dockerfile
+
 ├── docker-compose.yml
+
 └── requirements.txt
 
-**Setup**
+***Setup***
 
 1.Clone the Repository:
 
@@ -59,9 +81,9 @@ To ensure everything is working correctly, you can run the test suite:
 
 python manage.py test
 
-**Approach and Assumptions**
+***Approach and Assumptions***
 
-***Approach:***
+***1.Approach:***
 
 - Django Framework: Chosen for its comprehensive features and ease of use in building web applications.
 
@@ -73,7 +95,7 @@ python manage.py test
 
 - Docker: Used for containerization, making it easier to manage dependencies and ensure a consistent environment across different stages of        development and deployment.
 
-***Assumptions:***
+***2.Assumptions:***
 
 - Database Configuration: The MySQL database configuration in docker-compose.yml assumes the credentials and database setup are correct. Adjust the MYSQL_DATABASE, MYSQL_USER, MYSQL_PASSWORD, and MYSQL_ROOT_PASSWORD values as needed.
 
@@ -81,7 +103,7 @@ python manage.py test
 
 - Security: Basic security measures are implemented. For a production environment, additional configurations and security enhancements would be required, including managing sensitive information and environment-specific settings.
 
-**Code Explanation**
+***Code Explanation***
 
 1.models.py:
 Defines the Task model with fields for title, description, status, priority, due date, and timestamps. The user field links each task to a specific user.
