@@ -7,6 +7,7 @@ The Task Manager Project is a Django-based web application designed to handle ta
 ***Project Structure***
 
 task_manager_project/
+
 │
 
 ├── api/
@@ -55,30 +56,30 @@ task_manager_project/
 
 1. Clone the Repository:
 
-git clone <repository_url>
--> cd task_manager_project
+   git clone <repository_url>
+   -> cd task_manager_project
 
 2. Install Dependencies:
 
--> pip install -r requirements.txt
+   -> pip install -r requirements.txt
 
 3. Set Up the Database:
 Make sure MySQL is running as specified in docker-compose.yml. Run:
 
--> docker-compose up -d
+   -> docker-compose up -d
 
 4. Apply Migrations:
 
--> python manage.py migrater
+   -> python manage.py migrater
 
 5. Run the Development Server:
 
--> python manage.py runserver
+   -> python manage.py runserver
 
 6. Run Tests:
-To ensure everything is working correctly, you can run the test suite:
+   To ensure everything is working correctly, you can run the test suite:
 
--> python manage.py test
+   -> python manage.py test
 
 ***Approach and Assumptions***
 
